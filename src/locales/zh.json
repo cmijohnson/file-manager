@@ -1,0 +1,77 @@
+{
+    "app": {
+        "title": "文件管理器"
+    },
+    "sidebar": {
+        "dashboard": "仪表盘",
+        "categories": "分类",
+        "settings": "设置"
+    },
+    "dashboard": {
+        "addItem": "添加项目",
+        "noItems": "此分类中没有项目。",
+        "search": "搜索项目..."
+    },
+    "contextMenu": {
+        "open": "打开",
+        "openAsAdmin": "以管理员身份运行",
+        "showInFolder": "在文件夹中显示",
+        "rename": "重命名",
+        "delete": "删除",
+        "addItem": "添加项目",
+        "importFolder": "导入文件夹",
+        "settings": "设置",
+        "refresh": "刷新",
+        "copy": "复制",
+        "paste": "粘贴",
+        "properties": "属性",
+        "renameCategory": "重命名分类"
+    },
+    "settings": {
+        "settings": "设置",
+        "language": "语言",
+        "theme": "主题",
+        "aiSettings": "AI助手设置",
+        "geminiKey": "Gemini API密钥",
+        "deepseekKey": "DeepSeek API密钥",
+        "defaultProvider": "默认提供商"
+    },
+    "category": {
+        "prompt": "请输入分类名称:",
+        "addCategory": "添加分类",
+        "name": "分类名称",
+        "placeholder": "输入名称..."
+    },
+    "item": {
+        "renameItem": "重命名项目",
+        "displayName": "显示名称",
+        "placeholder": "输入名称...",
+        "renameHint": "此名称仅用于显示，不会更改文件本身",
+        "properties": "属性",
+        "name": "名称",
+        "type": "类型",
+        "path": "路径",
+        "size": "大小",
+        "file": "文件",
+        "folder": "文件夹"
+    },
+    "ai": {
+        "title": "AI助手",
+        "provider": "提供商",
+        "clearHistory": "清除历史",
+        "placeholder": "输入消息...",
+        "send": "发送",
+        "thinking": "思考中...",
+        "error": "错误",
+        "noApiKey": "请先在设置中配置API密钥",
+        "welcome": "您好！我是AI助手，有什么可以帮您的吗？"
+    },
+    "common": {
+        "cancel": "取消",
+        "add": "添加",
+        "save": "保存",
+        "delete": "删除",
+        "rename": "重命名",
+        "close": "关闭"
+    }
+}

@@ -1,0 +1,49 @@
+.context-menu {
+    position: fixed;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: var(--item-radius, 4px);
+    padding: 4px;
+    min-width: 150px;
+    z-index: 2000;
+    backdrop-filter: blur(10px);
+}
+
+.context-menu-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+    color: var(--text-color);
+    transition: background-color 0.1s;
+}
+
+.context-menu-item:hover {
+    background-color: var(--accent-color);
+    color: white;
+    /* Default active text color */
+}
+
+/* Theme specific overrides */
+body.theme-winxp .context-menu {
+    border: 1px solid #0055EA;
+    background-color: #FFFFFF;
+    border-radius: 0;
+}
+
+body.theme-winxp .context-menu-item:hover {
+    background-color: #316AC5;
+}
+
+body.theme-win2000 .context-menu {
+    border: 2px outset #FFFFFF;
+    background-color: #C0C0C0;
+    border-radius: 0;
+    box-shadow: 2px 2px 0px #000000;
+}
+
+body.theme-win2000 .context-menu-item:hover {
+    background-color: #000080;
+    color: #FFFFFF;
+}

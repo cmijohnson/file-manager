@@ -1,0 +1,77 @@
+{
+    "app": {
+        "title": "File Manager"
+    },
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "categories": "Categories",
+        "settings": "Settings"
+    },
+    "dashboard": {
+        "addItem": "Add Item",
+        "noItems": "No items in this category.",
+        "search": "Search items..."
+    },
+    "contextMenu": {
+        "open": "Open",
+        "openAsAdmin": "Run as Administrator",
+        "showInFolder": "Show in Folder",
+        "rename": "Rename",
+        "delete": "Delete",
+        "addItem": "Add Item",
+        "importFolder": "Import Folder",
+        "settings": "Settings",
+        "refresh": "Refresh",
+        "copy": "Copy",
+        "paste": "Paste",
+        "properties": "Properties",
+        "renameCategory": "Rename Category"
+    },
+    "settings": {
+        "settings": "Settings",
+        "language": "Language",
+        "theme": "Theme",
+        "aiSettings": "AI Assistant Settings",
+        "geminiKey": "Gemini API Key",
+        "deepseekKey": "DeepSeek API Key",
+        "defaultProvider": "Default Provider"
+    },
+    "category": {
+        "prompt": "Enter category name:",
+        "addCategory": "Add Category",
+        "name": "Category Name",
+        "placeholder": "Enter name..."
+    },
+    "item": {
+        "renameItem": "Rename Item",
+        "displayName": "Display Name",
+        "placeholder": "Enter name...",
+        "renameHint": "This name is for display only and won't change the actual file",
+        "properties": "Properties",
+        "name": "Name",
+        "type": "Type",
+        "path": "Path",
+        "size": "Size",
+        "file": "File",
+        "folder": "Folder"
+    },
+    "ai": {
+        "title": "AI Assistant",
+        "provider": "Provider",
+        "clearHistory": "Clear History",
+        "placeholder": "Type a message...",
+        "send": "Send",
+        "thinking": "Thinking...",
+        "error": "Error",
+        "noApiKey": "Please configure API key in Settings first",
+        "welcome": "Hello! I'm your AI Assistant. How can I help you?"
+    },
+    "common": {
+        "cancel": "Cancel",
+        "add": "Add",
+        "save": "Save",
+        "delete": "Delete",
+        "rename": "Rename",
+        "close": "Close"
+    }
+}

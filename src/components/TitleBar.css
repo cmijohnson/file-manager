@@ -1,0 +1,52 @@
+.titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    background: transparent;
+    width: 100%;
+    -webkit-app-region: drag;
+    /* Electron drag region */
+}
+
+.titlebar-drag-region {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.app-title {
+    font-size: 12px;
+    margin-left: 10px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.window-controls {
+    display: flex;
+    -webkit-app-region: no-drag;
+}
+
+.control-btn {
+    width: 46px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    cursor: default;
+    transition: background-color 0.1s;
+}
+
+.control-btn:hover {
+    background-color: var(--hover-bg);
+}
+
+.control-btn.close:hover {
+    background-color: #e81123;
+    color: white;
+}

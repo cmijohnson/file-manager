@@ -1,0 +1,153 @@
+/* Default (Win11) is in index.css, but we can override or scope here */
+
+/* Windows XP */
+body.theme-winxp {
+    --bg-color: #ECE9D8;
+    --text-color: #000000;
+    --sidebar-bg: #FFFFFF;
+    /* Explorer default */
+    --accent-color: #245DDA;
+    /* Luna Blue */
+    --border-color: #0055EA;
+    --hover-bg: #E1EAFB;
+    --font-family: 'Tahoma', 'Verdana', sans-serif;
+    --titlebar-bg: linear-gradient(to bottom, #0058EE 0%, #3593FF 4%, #288EFF 18%, #1279E9 44%, #0368EA 46%, #0575F3 58%, #067AFB 96%, #0052E2 100%);
+    /* Luna Blue Gradient */
+    --titlebar-text: #FFFFFF;
+    --window-radius: 8px 8px 0 0;
+    --item-radius: 0px;
+}
+
+/* Windows 7 */
+body.theme-win7 {
+    --bg-color: #F0F0F0;
+    /* Aero Basic */
+    --text-color: #1E1E1E;
+    --sidebar-bg: #F4F8FB;
+    --accent-color: #3884C2;
+    --border-color: #A8A8A8;
+    --hover-bg: #E5F3FB;
+    --font-family: 'Segoe UI', sans-serif;
+    --titlebar-bg: linear-gradient(to bottom, #D2E4F6 0%, #A9CBE6 100%);
+    /* Basic simulation */
+    --titlebar-text: #000000;
+    --window-radius: 6px;
+    --item-radius: 3px;
+}
+
+/* Windows 8.1 */
+body.theme-win8 {
+    --bg-color: #FFFFFF;
+    --text-color: #000000;
+    --sidebar-bg: #EAEAEA;
+    --accent-color: #0078D7;
+    --border-color: #D9D9D9;
+    --hover-bg: #CCEAFF;
+    --font-family: 'Segoe UI', sans-serif;
+    --titlebar-bg: #FFFFFF;
+    --titlebar-text: #000000;
+    --window-radius: 0px;
+    /* Sharp corners */
+    --item-radius: 0px;
+}
+
+/* Windows 2000 */
+body.theme-win2000 {
+    --bg-color: #C0C0C0;
+    --text-color: #000000;
+    --sidebar-bg: #FFFFFF;
+    --accent-color: #000080;
+    --border-color: #808080;
+    --hover-bg: #000080;
+    --hover-text: #FFFFFF;
+    /* High contrast hover */
+    --font-family: 'Microsoft Sans Serif', 'Arial', sans-serif;
+    --titlebar-bg: #808080;
+    /* Inactive by default, simplified */
+    --titlebar-bg-active: linear-gradient(90deg, #000080, #1084d0);
+    --titlebar-text: #FFFFFF;
+    --window-radius: 0px;
+    --item-radius: 0px;
+    --border-style: outset;
+}
+
+/* Linux (Generic/Adwaita) */
+body.theme-linux {
+    --bg-color: #F6F5F4;
+    --text-color: #2E3436;
+    --sidebar-bg: #EBEBEB;
+    --accent-color: #3584E4;
+    --border-color: #CDC7C2;
+    --hover-bg: #E0E0E0;
+    --font-family: 'Cantarell', 'Roboto', 'Ubuntu', sans-serif;
+    --titlebar-bg: #E4E4E4;
+    --titlebar-text: #2E3436;
+    --window-radius: 6px;
+    --item-radius: 6px;
+}
+
+/* Kali Linux */
+body.theme-kali {
+    --bg-color: #1F2229;
+    --text-color: #E6E6E6;
+    --sidebar-bg: #131519;
+    --accent-color: #2777FF;
+    /* Kali Blue/Dragon logic, though iconic is often Black/Blue */
+    --border-color: #2B303B;
+    --hover-bg: #2B303B;
+    --font-family: 'Fira Code', 'Roboto Mono', monospace;
+    /* Hacker feel */
+    --titlebar-bg: #0F1114;
+    --titlebar-text: #FFFFFF;
+    --window-radius: 4px;
+    --item-radius: 4px;
+}
+
+/* App overrides based on theme */
+
+/* TitleBar overrides */
+body.theme-winxp .titlebar {
+    background: var(--titlebar-bg);
+    height: 30px;
+    border-radius: var(--window-radius);
+}
+
+body.theme-winxp .app-title {
+    color: var(--titlebar-text);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+body.theme-winxp .control-btn {
+    color: #FFFFFF;
+}
+
+body.theme-winxp .control-btn.close {
+    background: #D74328;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+}
+
+body.theme-win2000 .app-container {
+    border: 2px outset #FFFFFF;
+    background-color: var(--bg-color);
+}
+
+body.theme-win2000 .titlebar {
+    background: var(--titlebar-bg-active);
+    margin: 2px;
+    width: calc(100% - 4px);
+}
+
+body.theme-win2000 .sidebar {
+    border: 2px inset #FFFFFF;
+    margin: 4px;
+    background: var(--sidebar-bg);
+}
+
+body.theme-kali .sidebar-nav .nav-item:hover {
+    border-left: 2px solid var(--accent-color);
+}
