@@ -111,4 +111,3 @@ npm run electron:dev
 ```
 
 ---
-*Created with ❤️ by Antigravity*
